@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "Constants.h"
 
 USING_NS_CC;
 
@@ -38,6 +39,8 @@ bool HelloWorld::init()
     Vec2 s_centre = s_origin + visibleSize / 2;
     
     auto backgroundSprite = Sprite::create("background-landscape.png");
+    if (PORTRAIT) backgroundSprite = Sprite::create("background.png");
+    
     backgroundSprite->setPosition(s_centre);
     this->addChild(backgroundSprite);
 

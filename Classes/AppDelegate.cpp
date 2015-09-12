@@ -1,5 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "Constants.h"
+
 
 USING_NS_CC;
 
@@ -16,8 +18,6 @@ USING_NS_CC;
 #define GAME_HEIGHT_HD      704
 #define GAME_WIDTH_RETINA   2112
 #define GAME_HEIGHT_RETINA  1408
-
-#define PORTRAIT 0
 
 AppDelegate::AppDelegate() {
     
@@ -59,12 +59,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
-    
-    
-    //auto designResolutionSize = cocos2d::Size(792.f,1254.f);
-    //auto screenSize = glview->getFrameSize();
-    //auto designSize = cocos2d::Size(SCREEN_WIDTH_RETINA, SCREEN_WIDTH_RETINA);
-    //auto gameSize = cocos2d::Size(GAME_WIDTH_RETINA, GAME_WIDTH_RETINA);
     
     auto screenSize = glview->getFrameSize();
     auto designSize = cocos2d::Size(SCREEN_WIDTH_RETINA, SCREEN_HEIGHT_RETINA);
