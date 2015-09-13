@@ -9,6 +9,6 @@
 #ifndef MultiResolution_Constants_h
 #define MultiResolution_Constants_h
 
-#define PORTRAIT 1
+#define PORTRAIT 0
 
 #endif
